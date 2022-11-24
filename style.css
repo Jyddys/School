@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to left, #2449ee , #d6126d);
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #FFF;
+  box-sizing: border-box;
+
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+/* BORED BOT */
+
+.bot-box {
+  text-align: center;
+  width: 60%;
+}
+
+
+#btn {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: red;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: #3612d6;
+}
+
+.feature {
+  background: #fc4a1a;  
+  background: -webkit-linear-gradient(to left, #f7b733, #fc4a1a);  
+  background: linear-gradient(to left, #f7b733, #fc4a1a);
+}
+
+#title {
+  font-size: 4rem;
+}
+
+#activity {
+  font-size: 2rem;
+}
+
+
+
+
+/* TO DO LIST */
+
+.list-box {
+  text-align: center;
+  width: 70%;
+  padding: 0 2rem;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+  font-size: 2em;
+  background-color: #FFF;
+}
+
+li {
+  border-bottom: 1px solid black;
+  padding-left: 1rem;
+  text-align: start;
+  color: black;
+  letter-spacing: 0.5px;
+
+}
+
+ul li:hover {
+  background: #d1d1d1;
+  cursor: pointer;
+}
+
+ul li:nth-child(odd) {
+  background: #d1d1d1;
+}
+
+
+.checked {
+  text-decoration: line-through;
+}
+
+input {
+  width: 50%;
+  height: 2rem;
+  font-size: 2rem;
+}
+
+#add {
+  width: 5rem;
+  height: 3rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
