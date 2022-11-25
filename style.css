@@ -50,6 +50,10 @@ main {
   font-size: 2rem;
 }
 
+.hidden {
+  display: none;
+}
+
 
 
 
@@ -82,13 +86,12 @@ ul li:hover {
   cursor: pointer;
 }
 
-ul li:nth-child(odd) {
-  background: #d1d1d1;
-}
+
 
 
 .checked {
   text-decoration: line-through;
+  background-color: rgb(129, 124, 124);
 }
 
 input {
