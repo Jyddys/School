@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: linear-gradient(to left, #2449ee , #d6126d);
+  background-repeat: initial;
   font-family: 'Source Sans Pro', sans-serif;
   color: #FFF;
   box-sizing: border-box;
@@ -25,9 +26,8 @@ main {
 
 
 #btn {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  width: 100px;
+  height: 100px;
   background-color: red;
   cursor: pointer;
 }
@@ -87,15 +87,13 @@ ul li:hover {
 }
 
 
-
-
 .checked {
   text-decoration: line-through;
   background-color: rgb(129, 124, 124);
 }
 
 input {
-  width: 50%;
+
   height: 2rem;
   font-size: 2rem;
 }
@@ -105,5 +103,24 @@ input {
   height: 3rem;
   cursor: pointer;
   display: inline-block;
+}
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 675px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    padding-left: 0.5em;
+  }
+  
+  .list-box {
+    display: flex;
+    flex-direction: column;    
+  }
 }
 
