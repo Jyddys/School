@@ -98,12 +98,34 @@ input {
   font-size: 2rem;
 }
 
-#add-btn {
-  width: 5rem;
-  height: 3rem;
-  cursor: pointer;
-  display: inline-block;
+#add-btn, #delete-btn {
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
 }
+
+#add-btn:hover, 
+#delete-btn:hover {
+  background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+}
+#add-btn:active, 
+#delete-btn:active {
+  position:relative;
+	top:1px;
+}
+
 
 
 /* MEDIA QUERY */
@@ -116,6 +138,7 @@ input {
 
   button {
     padding-left: 0.5em;
+    margin-top: 0.5em;
   }
   
   .list-box {

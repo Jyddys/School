@@ -10,6 +10,7 @@ const toDoFromLocalStorage = JSON.parse(localStorage.getItem('toDo'))
 const list = document.querySelector('ul')
 
 
+// Jos localstoragessa on tieoa niin se ajetaan html
 if(toDoFromLocalStorage) {
   toDos = toDoFromLocalStorage
   render(toDos)
@@ -28,6 +29,7 @@ function addNewItem(){
 
 inputBtn.addEventListener('click', addNewItem)
 
+// ajetaan tieto html
 function render(todo) {
   let listItems = ""
   for (let i = 0; i < todo.length; i++) {
@@ -48,8 +50,11 @@ deleteBtn.addEventListener('dblclick', () =>  {
   render(toDos)
 })
 
-list.addEventListener('click', (e) => e.target.classList.toggle('checked')
-)
+
+list.addEventListener('click', (e) => e.target.classList.toggle('checked'))
+
+
+
 
 // Syöttää inputissa olevat tiedot listaan
 document.addEventListener('keydown', function (e) {
@@ -57,7 +62,3 @@ if (e.key === "Enter") {
   addNewItem()
 }
 })
-
-
-
-
