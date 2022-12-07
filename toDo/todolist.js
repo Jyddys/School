@@ -29,6 +29,8 @@ function addNewItem(){
 
 inputBtn.addEventListener('click', addNewItem)
 
+
+
 // ajetaan tieto html
 function render(todo) {
   let listItems = ""
@@ -62,3 +64,6 @@ if (e.key === "Enter") {
   addNewItem()
 }
 })
+
+
+
