@@ -20,7 +20,6 @@ const themePick = document.getElementById('theme-pick').value
 fetch("https://www.thecolorapi.com/scheme?hex=" + hexArvo + "&mode=" + themePick + "&count=5")
   .then(res => res.json())
   .then(data => {
-    // const array = data.image.bare
 
     const hexValue1 = data.colors[0].hex.value
     const hexValue2 = data.colors[1].hex.value
